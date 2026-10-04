@@ -324,14 +324,14 @@ export default function App() {
     <main className="page-shell" onDragOver={(event) => event.preventDefault()}>
       <header className="topbar">
         <a className="wordmark" href="#top" aria-label="Temporary Transfer home">
-          <span className="wordmark-icon"><ArrowDownToLine size={17} aria-hidden="true" /></span>
-          <span>temporary<span className="wordmark-accent">/</span>transfer</span>
+          <img className="wordmark-icon" src="/transfer-mark.svg" alt="" />
+          <span className="wordmark-copy"><strong>Temporary Transfer</strong><span>Quick file handoff</span></span>
         </a>
-        <span className="topbar-note"><span className="live-dot" /> YOUR DEVICES, IN SYNC</span>
+        <span className="topbar-note"><span className="live-dot" /> NO ACCOUNTS <span className="topbar-divider">/</span> JUST TRANSFER</span>
       </header>
 
       <section className="intro" id="top">
-        <div className="eyebrow"><span>01</span><span className="eyebrow-line" /> A LITTLE SPACE BETWEEN DEVICES</div>
+        <div className="eyebrow"><span className="eyebrow-line" /> ONE SIMPLE PLACE BETWEEN DEVICES</div>
         <h1>Temporary <span>Transfer</span></h1>
         <p>Upload, transfer, download and delete files between your devices.</p>
       </section>
@@ -389,7 +389,7 @@ export default function App() {
       <section className="recent-section" aria-labelledby="recent-heading">
         <div className="section-heading">
           <div>
-            <div className="eyebrow section-eyebrow"><span>02</span><span className="eyebrow-line" /> THE SHARED DESK</div>
+            <div className="eyebrow section-eyebrow"><span className="eyebrow-line" /> YOUR TEMPORARY INBOX</div>
             <h2 id="recent-heading">Recent Items <span className="item-count">{items.length.toString().padStart(2, '0')}</span></h2>
           </div>
           <span className="newest-label">NEWEST FIRST <span aria-hidden="true">↓</span></span>
